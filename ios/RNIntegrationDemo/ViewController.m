@@ -29,7 +29,8 @@
 }
 
 - (IBAction)pushRNScreen:(UIButton *)sender {
-  NSURL *jsCodeLocation = [NSURL URLWithString:@"http://127.0.0.1:8081/index.bundle?platform=ios&dev=true"];
+  // 手机和电脑链接同一个wifi的wifi IP地址，才能在真机运行，同时模拟器也能运行
+  NSURL *jsCodeLocation = [NSURL URLWithString:@"http://192.168.6.149:8081/index.bundle?platform=ios&dev=true"];
 //  NSURL *jsCodeLocation = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index" fallbackResource:nil];
   RCTRootView *rootView = [[RCTRootView alloc] initWithBundleURL : jsCodeLocation
                        moduleName        : @"RNIntegrationDemo"
@@ -47,6 +48,7 @@
                         launchOptions : nil];
   UIViewController *vc = [[UIViewController alloc] init];
   vc.view = rootView;
+  vc.view.backgroundColor = [UIColor yellowColor];
   [self.navigationController pushViewController:vc animated:true];
 }
 

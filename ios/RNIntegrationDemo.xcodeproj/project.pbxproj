@@ -13,7 +13,7 @@
 		237AA9C420106740000E037F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 237AA9C220106740000E037F /* Main.storyboard */; };
 		237AA9C620106740000E037F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 237AA9C520106740000E037F /* Assets.xcassets */; };
 		237AA9C920106740000E037F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 237AA9C720106740000E037F /* LaunchScreen.storyboard */; };
-		237AA9CC20106740000E037F /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 237AA9CB20106740000E037F /* main.mm */; };
+		237AA9CC20106740000E037F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 237AA9CB20106740000E037F /* main.m */; };
 		237AA9D620106740000E037F /* RNIntegrationDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 237AA9D520106740000E037F /* RNIntegrationDemoTests.m */; };
 		237AA9E220106832000E037F /* SwiftTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237AA9E120106832000E037F /* SwiftTestViewController.swift */; };
 		CF789C7933879847367BDB25 /* Pods_RNIntegrationDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 568F60EEC5463F1FC36112D8 /* Pods_RNIntegrationDemoTests.framework */; };
@@ -39,7 +39,7 @@
 		237AA9C520106740000E037F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		237AA9C820106740000E037F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		237AA9CA20106740000E037F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		237AA9CB20106740000E037F /* main.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
+		237AA9CB20106740000E037F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		237AA9D120106740000E037F /* RNIntegrationDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RNIntegrationDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		237AA9D520106740000E037F /* RNIntegrationDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNIntegrationDemoTests.m; sourceTree = "<group>"; };
 		237AA9D720106740000E037F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -116,7 +116,7 @@
 				237AA9C520106740000E037F /* Assets.xcassets */,
 				237AA9C720106740000E037F /* LaunchScreen.storyboard */,
 				237AA9CA20106740000E037F /* Info.plist */,
-				237AA9CB20106740000E037F /* main.mm */,
+				237AA9CB20106740000E037F /* main.m */,
 				237AA9E020106832000E037F /* RNIntegrationDemo-Bridging-Header.h */,
 			);
 			path = RNIntegrationDemo;
@@ -361,7 +361,7 @@
 			files = (
 				237AA9E220106832000E037F /* SwiftTestViewController.swift in Sources */,
 				237AA9C120106740000E037F /* ViewController.m in Sources */,
-				237AA9CC20106740000E037F /* main.mm in Sources */,
+				237AA9CC20106740000E037F /* main.m in Sources */,
 				237AA9BE20106740000E037F /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
