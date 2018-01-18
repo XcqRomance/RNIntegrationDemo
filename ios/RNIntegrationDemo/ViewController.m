@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 #import "RNIntegrationDemo-Swift.h"
+#import <React/RCTRootView.h>
+#import <React/RCTBundleURLProvider.h>
 
 @interface ViewController ()
 
@@ -27,7 +29,25 @@
 }
 
 - (IBAction)pushRNScreen:(UIButton *)sender {
-  
+  NSURL *jsCodeLocation = [NSURL URLWithString:@"http://127.0.0.1:8081/index.bundle?platform=ios&dev=true"];
+//  NSURL *jsCodeLocation = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index" fallbackResource:nil];
+  RCTRootView *rootView = [[RCTRootView alloc] initWithBundleURL : jsCodeLocation
+                       moduleName        : @"RNIntegrationDemo"
+                       initialProperties : @{ @"scores" : @[
+                                                 @{
+                                                   @"name" : @"Alex",
+                                                   @"value": @"42"
+                                                   },
+                                                 @{
+                                                   @"name" : @"Joel",
+                                                   @"value": @"10"
+                                                   }
+                                                 ]
+                                             }
+                        launchOptions : nil];
+  UIViewController *vc = [[UIViewController alloc] init];
+  vc.view = rootView;
+  [self.navigationController pushViewController:vc animated:true];
 }
 
 
