@@ -1,0 +1,6 @@
+framework module Pods_RNIntegrationDemo {
+  umbrella header "Pods-RNIntegrationDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}
